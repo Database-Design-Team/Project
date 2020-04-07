@@ -11,11 +11,6 @@ import java.sql.*;
 @Controller
 public class HomeController {
 
-    @RequestMapping(value = "/")
-    public String index() {
-        return "index";
-    }
-
     @GetMapping(value="/checkUsernamePasswordCombination")
     @ResponseBody
     public boolean checkUsernamePasswordCombination(@RequestParam String username, @RequestParam String password) {
