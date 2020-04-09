@@ -2,7 +2,7 @@ package com.ivancompany.model;
 
 import java.sql.Date;
 
-public class release {
+public class Release {
     int release_id;
     String title;
     int release_type;
@@ -12,7 +12,7 @@ public class release {
     /**
      * constructor with no parameters
      */
-    public release() {
+    public Release() {
     }
 
     /**
@@ -23,7 +23,7 @@ public class release {
      * @param date_created the date of release
      * @param number_of_tracks the number of tracks
      */
-    public release(int release_id, String title, int release_type, Date date_created, int number_of_tracks) {
+    public Release(int release_id, String title, int release_type, Date date_created, int number_of_tracks) {
         this.release_id = release_id;
         this.title = title;
         this.release_type = release_type;

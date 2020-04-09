@@ -3,24 +3,24 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-public class song_usage_data {
+public class SongGenres {
     int song;
-    String user;
+    int genre;
 
     /**
      * empty constructor
      */
-    public song_usage_data() {
+    public SongGenres() {
     }
 
     /**
      * constructor with full parameters
      * @param song the ID of the song
-     * @param user the name of the user
+     * @param genre the ID of one of the song's genres
      */
-    public song_usage_data(int song, String user) {
+    public SongGenres(int song, int genre) {
         this.song = song;
-        this.user = user;
+        this.genre = genre;
     }
 
     public int getSong() {
@@ -31,11 +31,11 @@ public class song_usage_data {
         this.song = song;
     }
 
-    public String getUser() {
-        return user;
+    public int getGenre() {
+        return genre;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setGenre(int genre) {
+        this.genre = genre;
     }
 }

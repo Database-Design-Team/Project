@@ -5,7 +5,7 @@ import java.sql.Date;
 /**
  * @author Timothy
  */
-public class playlist_songs {
+public class PlaylistSongs {
     int song;
     int playlist;
     Date date_added;
@@ -13,7 +13,7 @@ public class playlist_songs {
     /**
      * constructor with no parameters
      */
-    public playlist_songs() {
+    public PlaylistSongs() {
     }
 
     /**
@@ -22,7 +22,7 @@ public class playlist_songs {
      * @param playlist the ID of the playlist getting added to
      * @param date_added the date the song was added to the playlist
      */
-    public playlist_songs(int song, int playlist, Date date_added) {
+    public PlaylistSongs(int song, int playlist, Date date_added) {
         this.song = song;
         this.playlist = playlist;
         this.date_added = date_added;

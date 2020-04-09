@@ -3,7 +3,7 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-public class user_account {
+public class UserAccount {
     String username;
     int student_id;
     boolean admin;
@@ -11,7 +11,7 @@ public class user_account {
     /**
      * empty constructor, setting defaults
      */
-    public user_account() {
+    public UserAccount() {
         admin = false;
     }
 
@@ -21,7 +21,7 @@ public class user_account {
      * @param student_id user's University of Houston ID
      * @param admin indicates if the user is an admin
      */
-    public user_account(String username, int student_id, boolean admin) {
+    public UserAccount(String username, int student_id, boolean admin) {
         this.username = username;
         this.student_id = student_id;
         this.admin = admin;

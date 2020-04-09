@@ -3,14 +3,14 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-class genre {
+class Genre {
     int genre_id;
     String genre_title;
 
     /**
      * constructor without parameters
      */
-    public genre() {
+    public Genre() {
     }
 
     /**
@@ -18,7 +18,7 @@ class genre {
      * @param genre_id the unique integer id of a genre
      * @param genre_title the name of a genre
      */
-    public genre(int genre_id, String genre_title) {
+    public Genre(int genre_id, String genre_title) {
         this.genre_id = genre_id;
         this.genre_title = genre_title;
     }

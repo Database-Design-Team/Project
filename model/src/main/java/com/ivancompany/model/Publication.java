@@ -1,13 +1,13 @@
 package com.ivancompany.model;
 
-public class publication {
+public class Publication {
     int artist;
     int release;
 
     /**
      * constructor without parameters
      */
-    public publication() {
+    public Publication() {
     }
 
     /**
@@ -15,7 +15,7 @@ public class publication {
      * @param artist one of the owners of the album
      * @param release the released
      */
-    public publication(int artist, int release) {
+    public Publication(int artist, int release) {
         this.artist = artist;
         this.release = release;
     }

@@ -5,7 +5,7 @@ import java.sql.Time;
 /**
  * @author Timothy
  */
-public class song_statistics {
+public class SongStatistics {
     String user;
     Time time_stamp;
     float rating;
@@ -14,7 +14,7 @@ public class song_statistics {
     /**
      * empty constructor
      */
-    public song_statistics() {
+    public SongStatistics() {
     }
 
     /**
@@ -24,7 +24,7 @@ public class song_statistics {
      * @param rating user's rating, if any
      * @param song ID of the song listened to
      */
-    public song_statistics(String user, Time time_stamp, float rating, int song) {
+    public SongStatistics(String user, Time time_stamp, float rating, int song) {
         this.user = user;
         this.time_stamp = time_stamp;
         this.rating = rating;

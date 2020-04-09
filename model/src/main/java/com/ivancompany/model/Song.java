@@ -3,18 +3,19 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-public class song {
+public class Song {
     int song_id;
     float aggregate_popularity;
     String song_name;
     int song_length;
     String path_to_audio_file;
     int musician;
+    boolean deleted;
 
     /**
      * empty constructor
      */
-    public song() {
+    public Song() {
     }
 
     /**
@@ -25,8 +26,9 @@ public class song {
      * @param song_length length of the song in seconds
      * @param path_to_audio_file specifies where the audio file can be found
      * @param musician the unique ID of the artist
+     * @param deleted indicates if the song is flagged as deleted
      */
-    public song(int song_id, float aggregate_popularity, String song_name, int song_length, String path_to_audio_file, int musician) {
+    public Song(int song_id, float aggregate_popularity, String song_name, int song_length, String path_to_audio_file, int musician, boolean deleted) {
         this.song_id = song_id;
         this.aggregate_popularity = aggregate_popularity;
         this.song_name = song_name;
@@ -81,5 +83,13 @@ public class song {
 
     public void setMusician(int musician) {
         this.musician = musician;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }

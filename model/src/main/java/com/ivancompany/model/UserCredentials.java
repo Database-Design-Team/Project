@@ -5,14 +5,14 @@ import java.util.Objects;
 /**
  * @author Timothy
  */
-public class user_credentials {
+public class UserCredentials {
     String login_name;
     String password;
 
     /**
      * empty constructor
      */
-    public user_credentials() {
+    public UserCredentials() {
     }
 
     /**
@@ -20,7 +20,7 @@ public class user_credentials {
      * @param login_name username
      * @param password user's password
      */
-    public user_credentials(String login_name, String password) {
+    public UserCredentials(String login_name, String password) {
         this.login_name = login_name;
         this.password = password;
     }
@@ -45,7 +45,7 @@ public class user_credentials {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        user_credentials that = (user_credentials) o;
+        UserCredentials that = (UserCredentials) o;
         return getLogin_name().equals(that.getLogin_name()) &&
                 getPassword().equals(that.getPassword());
     }

@@ -5,7 +5,7 @@ import java.sql.Date;
 /**
  * @author Timothy
  */
-class library {
+class Library {
     int song;
     String owner;
     Date date_added;
@@ -13,7 +13,7 @@ class library {
     /**
      * constructor with no parameters
      */
-    public library() {
+    public Library() {
     }
 
     /**
@@ -22,7 +22,7 @@ class library {
      * @param owner the name of the library's owner
      * @param date_added the date that this song was added to the library
      */
-    public library(int song, String owner, Date date_added) {
+    public Library(int song, String owner, Date date_added) {
         this.song = song;
         this.owner = owner;
         this.date_added = date_added;

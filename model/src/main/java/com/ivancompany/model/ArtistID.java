@@ -5,7 +5,7 @@ import java.sql.Date;
 /**
  * @author Timothy
  */
-class artist_id {
+class ArtistID {
     int artist_id;
     String artist_name;
     Date date_formed;
@@ -13,7 +13,7 @@ class artist_id {
     /**
      * constructor without parameters
      */
-    public artist_id() {
+    public ArtistID() {
     }
 
     /**
@@ -22,7 +22,7 @@ class artist_id {
      * @param artist_name the name of the artist
      * @param date_formed the date an artist became active
      */
-    public artist_id(int artist_id, String artist_name, Date date_formed) {
+    public ArtistID(int artist_id, String artist_name, Date date_formed) {
         this.artist_id = artist_id;
         this.artist_name = artist_name;
         this.date_formed = date_formed;

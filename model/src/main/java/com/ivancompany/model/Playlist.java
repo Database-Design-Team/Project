@@ -5,7 +5,7 @@ import java.sql.Date;
 /**
  * @author Timothy
  */
-public class playlist {
+public class Playlist {
     int playlist_id;
     Date date_created;
     boolean is_private;
@@ -16,7 +16,7 @@ public class playlist {
     /**
      * constructor with no parameters, initializing to defaults
      */
-    public playlist() {
+    public Playlist() {
         is_private = false;
         number_of_songs = 0;
     }
@@ -30,7 +30,7 @@ public class playlist {
      * @param playlist_name the name of the playlist
      * @param owner the owner of the playlist
      */
-    public playlist(int playlist_id, Date date_created, boolean is_private, int number_of_songs, String playlist_name, String owner) {
+    public Playlist(int playlist_id, Date date_created, boolean is_private, int number_of_songs, String playlist_name, String owner) {
         this.playlist_id = playlist_id;
         this.date_created = date_created;
         this.is_private = is_private;

@@ -3,7 +3,7 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-public class track {
+public class Track {
     int release;
     int song;
     int track_number;
@@ -11,7 +11,7 @@ public class track {
     /**
      * empty constructor
      */
-    public track() {
+    public Track() {
     }
 
     /**
@@ -20,7 +20,7 @@ public class track {
      * @param song ID of the song in the release
      * @param track_number the track number in the release
      */
-    public track(int release, int song, int track_number) {
+    public Track(int release, int song, int track_number) {
         this.release = release;
         this.song = song;
         this.track_number = track_number;

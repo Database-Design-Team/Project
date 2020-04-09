@@ -3,14 +3,14 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-class band_member {
+class BandMember {
     String member_name;
     int band_id;
 
     /**
      * empty constructor
      */
-    public band_member() {
+    public BandMember() {
     }
 
     /**
@@ -18,7 +18,7 @@ class band_member {
      * @param member_name the name of this particular band member
      * @param band_id the band's unique integer id
      */
-    public band_member(String member_name, int band_id) {
+    public BandMember(String member_name, int band_id) {
         this.member_name = member_name;
         this.band_id = band_id;
     }

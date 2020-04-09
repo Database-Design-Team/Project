@@ -3,14 +3,14 @@ package com.ivancompany.model;
 /**
  * @author Timothy
  */
-public class release_genres {
+public class ReleaseGenres {
     int genre;
     int release;
 
-    public release_genres() {
+    public ReleaseGenres() {
     }
 
-    public release_genres(int genre, int release) {
+    public ReleaseGenres(int genre, int release) {
         this.genre = genre;
         this.release = release;
     }
