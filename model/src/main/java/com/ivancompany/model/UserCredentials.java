@@ -53,5 +53,6 @@ public class UserCredentials {
     @Override
     public int hashCode() {
         return Objects.hash(getPassword());
+
     }
 }
