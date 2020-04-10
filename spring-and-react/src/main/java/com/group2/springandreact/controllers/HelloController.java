@@ -1,4 +1,4 @@
-package com.group2.springandreact;
+package com.group2.springandreact.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,4 +11,5 @@ public class HelloController {
     public String hello() {
         return "Hello, the time at the server is now " + new Date() + "\n";
     }
+        
 }
