@@ -30,5 +30,5 @@ yarn-error.log*
 /webapp/frontend/build/
 /webapp/frontend/node_modules/
 
-.vscode
-.settings
+.vscode/
+.settings/
