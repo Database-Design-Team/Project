@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>onlineMusicLibraryRootParent</artifactId>
-        <groupId>com.ivancompany</groupId>
+        <groupId>com.group2</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -72,8 +72,8 @@
                             <goal>install-node-and-npm</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v13.12.0</nodeVersion>
-                            <npmVersion>6.14.0</npmVersion>
+                            <nodeVersion>v12.16.1</nodeVersion>
+                            <npmVersion>5.6.0</npmVersion>
                         </configuration>
                     </execution>
                     <execution>
@@ -115,18 +115,24 @@
                 </executions>
             </plugin>
             <plugin>
-                <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.group2.webapp.App</mainClass>
-                        </manifest>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <classpathPrefix>lib/</classpathPrefix>
+                        <mainClass>com.group2.webapp.App</mainClass>
+                    </manifest>
                     </archive>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -158,7 +164,7 @@
                     </includes>
                     <appName>coog-music</appName>
                     <processTypes>
-                        <web>java -jar target/*.jar</web>
+                        <web>java -jar target/*.jar --port $PORT</web>
                     </processTypes>
                 </configuration>
             </plugin>

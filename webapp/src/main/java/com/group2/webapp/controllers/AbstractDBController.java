@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class AbstractDBController {
-    private static final String url = "jdbc:postgresql://localhost/cosc3380projectdatabase";
-    private static final String user = "postgres";
-    private static final String password = "masterpassword";
+    private static final String url = "jdbc:postgresql://localhost:5432/coog-music";
+    private static final String user = "ryantorrecampo";
+    private static final String password = "alpine";
 
     protected Connection conn;
 
